@@ -23,7 +23,7 @@ Para este Challenge de Alura Latam se presenta una app para consulta de libros c
 
 Al inicializar el programa te encontrarás con el siguiente menú
 
-<img src="https://github.com/Kpp94/ConversorDeMonedas/blob/main/img/Menu_Conversor.png">
+<img src="https://github.com/Kpp94/literatura/blob/master/img/MenuL.png">
 
 Donde se muestran como opciones seis tipos de conversión de monedas, sin embargo se muestra una séptima opción en la que podremos ingresar una conversión diferente a las seis mostradas.
 
