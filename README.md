@@ -25,38 +25,36 @@ Al inicializar el programa te encontrarás con el siguiente menú
 
 <img src="https://github.com/Kpp94/literatura/blob/master/img/MenuL.png">
 
-Donde se muestran como opciones seis tipos de conversión de monedas, sin embargo se muestra una séptima opción en la que podremos ingresar una conversión diferente a las seis mostradas.
+Tendremos el siguiente listado de Opciones:
 
-Si ingresa una opción fuera de las ocho mostradas en el menú se mostrara el siguiente texto.
+- Buscar Libro por Titulo
+- Listar Libros Registrados
+- Listar Autores registrados
+- Listar Autores vivos en determinado año
+- Listar libros por idioma
 
-<img src="https://github.com/Kpp94/ConversorDeMonedas/blob/main/img/Opc_Novalida_conversor.png">
 
-Cuando escogemos una de las opciones válidas se realizara la consulta en la API ExchangeRate y mediante la biblioteca Gson se devolverá los datos de la consulta como son:
+Algunas de las funciones es buscar libro por titulo que al seleccionarla nos pide que escribamos el nombre del libro que queremos consultar, aqui si no escribieramos el titulo completo y solo usamos una palabra del mismo, el programa buscara dicha palabra y arrojara el primer resultado que se presente.
+Posteriormente retornara los datos del libro encontrado. En caso de no encontrar ningun libro se avisara.
 
-La cantidad a convertir, la moneda base, la moneda destino, el resultado de la conversión y factor de conversión de la moneda consultada.
+<img src="https://github.com/Kpp94/literatura/blob/master/img/Opcion1L.png">
 
-<img src="https://github.com/Kpp94/ConversorDeMonedas/blob/main/img/Opciones_conversor.png">
+Todos los ibros consultados se iran guardando en la base de datos donde podran ser consultados nuevamente, estos datos se guardaran tanto como el autor y el idioma del libro.
 
-Otra consulta.
+Ya guardado los libros consultados podemos hacer una consulta de los mismos asi como la lista de autores dependiendo de los libros que hemos consultado.
 
-<img src="https://github.com/Kpp94/ConversorDeMonedas/blob/main/img/Opc_3_conversor.png">
+<img src="https://github.com/Kpp94/literatura/blob/master/img/Opcion2L.png">
 
-Cada que se haga una consulta se volverá al menú de inicio hasta que se seleccione salir del programa.
+<img src="https://github.com/Kpp94/literatura/blob/master/img/Opcion3L.png">
 
-Al seleccionar la opción 7 se piden los siguientes datos.
+Podemos consultar en la base de datos las listas generadas a paritr de cada consulta.
 
-- La cantidad a convertir.
+<img src="https://github.com/Kpp94/literatura/blob/master/img/Lista%20libros.png">
 
-- La moneda base a convertir.
-
-- La moneda de destino.
-
-Tal como se menciona en el programa las monedas base y destino deben ser ingresadas con el código de 3 letras basado en el formato ISO-4217 (https://www.iso.org/iso-4217-currency-codes.html)
-
-<img src="https://github.com/Kpp94/ConversorDeMonedas/blob/main/img/opc_7_conversor.png">
-
-Una vez que hayamos realizado todas nuestras consultas seleccionaremos la opción 8 de salida, esto nos retornara una despedida y un listado de las consultas realizadas en el programa.
-
-<img src="https://github.com/Kpp94/ConversorDeMonedas/blob/main/img/salida_conversor.png">
+## Datos a considerar <img src="https://w7.pngwing.com/pngs/973/727/png-transparent-amplifier-owner-s-manual-product-manuals-sign-electric-potential-difference-importance-thumbnail.png" width="30px">
+- Si se selecciona una opcion fuera de las mostradas en el menu, se mostrara una alerta mencionando que la opcion no es valida.
+- No se pueden registrar dos veces el mismo libro.
+- Se pueden consutlar varios libros de un mismo autor.
+- La consulta de libros por idioma se usa escribiendo las dos letras del idioma con base a la norma ISO 639-1
 
 <h5>Autor. Kevin Pérez Pérez</h5>
